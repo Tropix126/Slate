@@ -3,14 +3,9 @@
     margin: 0;
     padding: 0;
     background: transparent !important;
-    &.groupStart-23k01U {
-      border-top: 1px solid var(--border-color);
-      margin-top: var(--spacing);
-      padding-top: var(--spacing);
-    }
     .avatar-1BDn8e {
       border-radius: var(--border-radius);
-      border: 1px solid var(--border-color);
+      border: 1px solid var(--border-colour);
       width: 26px !important;
       height: 26px !important;
       &:hover {
@@ -20,18 +15,18 @@
     .attachment-33OFj0,
     code,
     .wrapper-35wsBm {
-      border: 1px solid var(--border-color);
-      background-color: var(--background-color);
+      border: 1px solid var(--border-colour);
+      background-color: var(--background-colour);
     }
     code, pre {
       font-family: var(--font-family-monospace);
       font-size: var(--font-size);
     }
     .embedFull-2tM8-- {
-      background-color: var(--background-color);
-      border-top: 1px solid var(--border-color) !important;
-      border-right: 1px solid var(--border-color) !important;
-      border-bottom: 1px solid var(--border-color) !important;
+      background-color: var(--background-colour);
+      border-top: 1px solid var(--border-colour) !important;
+      border-right: 1px solid var(--border-colour) !important;
+      border-bottom: 1px solid var(--border-colour) !important;
       .embedTitle-3OXDkz,
       .embedDescription-1Cuq9a {
         font-size: var(--font-size);
@@ -62,8 +57,8 @@
       margin-top: var(--spacing);
       a {
         font-size: var(--font-size);
-        background: var(--background-color);
-        border: 1px solid var(--border-color);
+        background: var(--background-colour);
+        border: 1px solid var(--border-colour);
         border-radius: var(--border-radius);
         padding: calc(var(--spacing) / 2);
         margin-right: var(--spacing);
@@ -75,64 +70,25 @@
         }
       }
     }
-    &.cozyMessage-3V1Y8y {
-      .header-23xsNx {
-        margin-left: -68px;
-        padding-left: 58px;
-      }
-      .container-1ov-mD {
-        margin-left: -10px;
-      }
-      .markupRtl-3M0hmN {
-        margin-left: -10px;
-      }
-    }
   }
-
-  .newMessagesBar-mujexs {
-    left: 0;
-    right: 0;
-    border-radius: 0;
-    background: var(--accent-solid);
-    border-bottom: 1px solid var(--border-color);
-    box-shadow: none;
+  .groupStart-23k01U {
+    border-top: 1px solid var(--border-colour);
+    margin-top: var(--spacing);
+    padding-top: var(--spacing);
   }
-
-  .hasMore-3e72_v {
-    margin: 0;
-    box-shadow: none;
-    background: var(--background-color);
-    border-top: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
-    border-radius: 0;
-  }
-
-  .divider-JfaTT5 {
-    height: auto;
-    margin: var(--spacing) 0 0;
-    padding: var(--spacing) 0;
-    border-top: 1px solid var(--border-color);
-    background: var(--background-color);
-    .content-1o0f9g {
-      background: transparent;
-      color: var(--text-muted);
+  .cozyMessage-3V1Y8y {
+    // Spacing between the avatar and message
+    .header-23xsNx {
+      margin-left: -68px;
+      padding-left: 58px;
     }
-    & + .groupStart-23k01U {
-      margin-top: 0;
+    // Embed/Image/File
+    .container-1ov-mD {
+      margin-left: -10px;
     }
-    &.isUnread-3Ef-o9 {
-      border-bottom: 1px solid var(--border-color);
-      .unreadPill-2HyYtt {
-        position: unset;
-        background: transparent;
-        color: var(--discord-red);
-        svg {
-          display: none;
-        }
-      }
-      & + .groupStart-23k01U {
-        margin-top: calc(var(--spacing) - 4px);
-      }
+    // Text
+    .markupRtl-3M0hmN {
+      margin-left: -10px;
     }
   }
   .mentioned-xhSam7 {
@@ -141,8 +97,8 @@
 
   // Edit message
   .scrollableContainer-2NUZem {
-    background-color: var(--background-color);
-    border: 1px solid var(--border-color);
+    background-color: var(--background-colour);
+    border: 1px solid var(--border-colour);
     border-radius: var(--border-radius);
     .markup-2BOw-j {
       font-size: var(--font-size);

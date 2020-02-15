@@ -1,8 +1,11 @@
 #app-mount .userPopout-3XzG_A {
   box-shadow: none;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--border-colour);
   border-radius: var(--border-radius);
-  background: var(--background-color);
+  background: var(--background-colour);
+  .scroller-2FKFPG::-webkit-scrollbar {
+    display: none;
+  }
   .headerNormal-T_seeN {
     background: var(--userpopout-header);
   }
@@ -14,12 +17,22 @@
   }
   .bodyInner-245q0L {
     background: var(--userpopout-body);
+    padding: var(--spacing);
 
     .role-2irmRk {
       border-radius: var(--border-radius);
       .roleCircle-3xAZ1j {
         border-radius: var(--border-radius);
       }
+    }
+    .actionButton-VzECiy {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: var(--spacing) var(--spacing) 0;
+      border: none;
+      margin: 0;
+      height: auto;
     }
     .bodyTitle-Y0qMQz {
       font-size: var(--font-size-sm);
@@ -29,15 +42,19 @@
     .note-3HfJZ5 {
       margin-left: 0;
       textarea {
-        background: var(--userpopout-textbox);
+        background-color: transparent;
         border-radius: var(--border-radius);
-        border: 1px solid var(--border-color);
+        border: 1px solid transparent;
         font-size: var(--font-size);
-        padding: var(--spacing);
+        padding: var(--spacing-sm);
         line-height: normal;
-        height: 38px !important;
+        height: 36px !important;
         &::placeholder {
           color: var(--text-muted);
+        }
+        &:focus {
+          background-color: var(--userpopout-textbox);
+          border-color: var(--border-colour);
         }
       }
     }
@@ -50,7 +67,7 @@
     input {
       background: var(--userpopout-textbox);
       border-radius: var(--border-radius);
-      border: 1px solid var(--border-color);
+      border: 1px solid var(--border-colour);
       font-size: var(--font-size);
       padding: var(--spacing);
       line-height: normal;

@@ -1,7 +1,7 @@
 .theme-dark {
   // Master Variables
-  --border-color: #141414;
-  --background-color: #24292e;
+  --border-colour: #141414;
+  --background-colour: #24292e;
   --text-default: #d1d5da;
   --text-muted: #959da5;
   --text-focus: #ffffff;
@@ -9,11 +9,11 @@
   // Toolbar (headers)
   --toolbar-background: #1d2125;
   --toolbar-hover-background: #2f363d;
-  --toolbar-server-icon-color: #454f59;
+  --toolbar-server-icon-colour: #454f59;
 
   // Account Container
-  --account-panel-background-color: #2f363d;
-  --account-button-hover-color: #{lighten(#2f363d, 1%)};
+  --account-panel-background-colour: #2f363d;
+  --account-button-hover-colour: #{lighten(#2f363d, 1%)};
 
   // Chat/Friends/DM
   --main-background: #2a3036;
@@ -27,7 +27,7 @@
 
   // Userpopouts
   --userpopout-header: var(--toolbar-background);
-  --userpopout-body: var(--background-color);
+  --userpopout-body: var(--background-colour);
   --userpopout-textbox: var(--toolbar-background);
 
   // Font weights

@@ -1,11 +1,11 @@
 #app-mount {
-  background: var(--background-color);
+  background: var(--background-colour);
   .base-3dtUhz {
     border-radius: 0;
-    border-left: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-colour);
   }
 
-  // Mention
+  // Mentions/Channel jump
   .mention {
     background: rgba(var(--accent-colour), 0.15);
     border-radius: var(--border-radius);

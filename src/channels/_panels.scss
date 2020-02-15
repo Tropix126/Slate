@@ -1,6 +1,6 @@
 #app-mount .panels-j1Uci_ {
-  background: var(--account-panel-background-color);
-  border-top: 1px solid var(--border-color);
+  background: var(--account-panel-background-colour);
+  border-top: 1px solid var(--border-colour);
   // Connected channel
   .container-1giJp5 {
     border: none;
@@ -14,8 +14,8 @@
       > div {
         display: none;
         position: absolute;
-        background: var(--background-color);
-        border: 1px solid var(--border-color);
+        background: var(--background-colour);
+        border: 1px solid var(--border-colour);
         height: 34px;
         margin-top: 1px;
         box-sizing: border-box;
@@ -55,9 +55,11 @@
         display: block;
       }
     }
+
+    // Go love and Disconnect buttons
     .horizontal-1ae9ci {
-      background: var(--background-color);
-      border: 1px solid var(--border-color);
+      background: var(--background-colour);
+      border: 1px solid var(--border-colour);
       border-radius: var(--border-radius);
       overflow: hidden;
       width: calc(100% - var(--spacing) * 4);
@@ -77,19 +79,16 @@
     .nameTag-3uD-yy {
       display: none;
     }
-    .wrapper-3t9DeA {
-      background: var(--background-color);
-      border: 1px solid var(--border-color);
-      border-radius: var(--border-radius);
-    }
     .avatarWrapper-2yR4wp {
       margin-right: 0;
     }
+
+    // Mute, Deafen, Settings
     .horizontal-1ae9ci {
       margin-left: var(--spacing);
       width: 100%;
-      border: 1px solid var(--border-color);
-      background: var(--background-color);
+      border: 1px solid var(--border-colour);
+      background: var(--background-colour);
       border-radius: var(--border-radius);
       overflow: hidden;
       button {
