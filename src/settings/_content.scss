@@ -3,4 +3,131 @@
   .contentColumnDefault-1VQkGM {
     padding: var(--spacing-lg);
   }
+
+  // Global rules
+  h2 {
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-lg);
+    color: var(--text-focus);
+    margin-bottom: var(--spacing-lg);
+  }
+  h5 {
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size);
+    &:not(.isEnabled-24g9qA) {
+      color: var(--text-default);
+    }
+  }
+
+  // Blurple buttons
+  .lookFilled-1Gx00P.colorBrand-3pXr91 {
+    @include smallBtn;
+  }
+
+  // Red buttons
+  .lookOutlined-3sRXeN.colorRed-1TFJan {
+    @include smallBtn(var(--discord-red));
+  }
+
+  // Buttons
+  .lookLink-9FtZy-.colorPrimary-3b3xI6 {
+    @include smallBtn;
+    margin-left: var(--spacing);
+    div {
+      background: transparent;
+    }
+  }
+
+  // Green buttons
+  .lookFilled-1Gx00P.colorGreen-29iAKY {
+    @include smallBtn(var(--discord-green));
+  }
+
+  // My Account
+  .userSettingsAccount-2eMFVR {
+    h2 {
+      font-size: 0;
+      display: flex;
+      align-items: center;
+      margin-bottom: var(--spacing-lg);
+      &:after {
+        content: "Discordapp.com";
+        font-size: var(--font-size-lg);
+      }
+    }
+    .cardPrimary-1Hv-to {
+      background: transparent;
+      border: none;
+      padding: 0;
+      .flexChild-faoVW3:first-child {
+        margin-right: 0;
+        .wrapper-3t9DeA {
+          width: 34px !important;
+          height: 34px !important;
+          border-radius: var(--border-radius);
+          border: 1px solid var(--border-colour);
+        }
+      }
+      h5 {
+        display: none;
+      }
+      .marginBottom20-32qID7 {
+        margin-bottom: var(--spacing-sm);
+      }
+      .viewBody-2Qz-jg {
+        pointer-events: none;
+        font-size: var(--font-size);
+        font-weight: var(--font-weight-semibold);
+        color: var(--text-default);
+        span {
+          opacity: 1 !important;
+        }
+      }
+    }
+  }
+  .userInfoViewingButton-2-jbH9 {
+    top: 0;
+    right: 0;
+    @include smallBtn;
+  }
+  .userSettingsSecurity-3IYeMF {
+    margin-top: var(--spacing-lg);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

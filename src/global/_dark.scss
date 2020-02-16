@@ -25,6 +25,10 @@
   // Friends list
   --now-playing-background: var(--main-background);
 
+  // Settings
+  --settings-button: var(--account-panel-background-colour);
+  --settings-button-hover: #{lighten(#2f363d, 4%)};
+
   // Userpopouts
   --userpopout-header: var(--toolbar-background);
   --userpopout-body: var(--background-colour);
