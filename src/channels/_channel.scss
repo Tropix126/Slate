@@ -51,7 +51,7 @@
             width: 14px;
             height: 14px;
             margin-left: var(--spacing);
-            -webkit-mask: url($svg_speaker) center/cover no-repeat;
+            -webkit-mask: url($icon_speaker) center/cover no-repeat;
             background: currentColor;
           }
         }
@@ -149,7 +149,7 @@
           width: 14px;
           height: 14px;
           margin-left: var(--spacing);
-          -webkit-mask: url($svg_speaker) center/cover no-repeat;
+          -webkit-mask: url($icon_speaker) center/cover no-repeat;
           background: currentColor;
         }
       }

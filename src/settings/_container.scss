@@ -1,0 +1,64 @@
+#app-mount .layer-3QrUeG[aria-label*="SETTINGS"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.4);
+
+  .scroller-2FKFPG {
+    background: var(--background-colour);
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  // Close button
+  .toolsContainer-1edPuj {
+    padding-top: 0;
+    width: auto;
+    position: absolute;
+    right: 25px;
+    top: -48px;
+  }
+  .container-1sFeqf {
+    .closeButton-1tv5uR {
+      border: none;
+      width: 36px;
+      height: 36px;
+      flex: none;
+      background: transparent;
+      border-radius: 0;
+    }
+    .keybind-KpFkfr {
+      display: none;
+    }
+  }
+
+  .standardSidebarView-3F1I7i {
+    border-radius: var(--border-radius);
+    background: var(--background-colour);
+    overflow: hidden;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.4);
+    width: 50vw;
+    height: 50vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: calc(var(--spacing) + 1px);
+    padding-top: 56px;
+    &:before {
+      padding-left: 10px;
+      content: "Options";
+      border-bottom: 1px solid var(--border-colour);
+      width: 100%;
+      color: #fff;
+      font-weight: var(--font-weight-semibold);
+      color: var(--text-default);
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: var(--spacing-lg);
+      box-sizing: border-box;
+    }
+  }
+}

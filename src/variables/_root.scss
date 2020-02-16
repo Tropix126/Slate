@@ -4,8 +4,9 @@
   --accent-solid: rgba(var(--accent-colour), 1);
 
   // Spacing
-  --spacing: 10px;
   --spacing-sm: calc(var(--spacing) / 2);
+  --spacing: 10px;
+  --spacing-lg: calc(var(--spacing) * 2);
 
   // Fonts
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
@@ -40,4 +41,5 @@
   --discord-purple: #593695;
   --discord-invisible: #747f8d;
   --discord-nitro: #ff73fa;
+  --discord-blurple: #7289da;
 }
