@@ -10,8 +10,8 @@
   --font-size-sm: 11px;
   --font-size: 12px;
   --font-size-lg: 14px;
-  --font-size-xl: 20px;
-  --font-size-xxl: 28px;
+  --font-size-xl: 16px;
+  --font-size-xxl: 22px;
   --titlebar-height: 28px;
   --toolbar-height: 50px;
   --sidebar-width: 260px;
@@ -197,14 +197,14 @@
 }
 #app-mount .wrapper-3t9DeA[aria-label*=mobile]:not([style*="width:80px;"]):before {
   content: "";
-  background: linear-gradient(90deg, transparent, var(--bg4) 50%);
+  background: linear-gradient(90deg, transparent, var(--background-colour) 50%);
   height: 30px;
   width: 50px;
   top: 50%;
   transform: translateY(-50%);
   display: block;
   position: absolute;
-  right: -180px;
+  right: -210px;
 }
 #app-mount .wrapper-3t9DeA[aria-label*=mobile]:after {
   content: "";
@@ -218,8 +218,8 @@
   height: 16px;
   top: 50%;
   transform: translateY(-50%);
-  right: -171px;
-  background: var(--green);
+  right: -211px;
+  background: var(--discord-green);
   z-index: 1;
 }
 #app-mount .wrapper-3t9DeA rect {
@@ -783,6 +783,24 @@
   width: 26px !important;
   height: 26px !important;
 }
+#app-mount .privateChannels-1nO12o .scroller-1JbKMe .channel-2QD9_O .wrapper-3t9DeA:before {
+  right: -190px;
+}
+#app-mount .privateChannels-1nO12o .scroller-1JbKMe .channel-2QD9_O .wrapper-3t9DeA:after {
+  right: -190px;
+}
+#app-mount .privateChannels-1nO12o .scroller-1JbKMe .channel-2QD9_O:hover .wrapper-3t9DeA:before {
+  background: linear-gradient(90deg, transparent, var(--background-modifier-hover) 50%);
+}
+#app-mount .privateChannels-1nO12o .scroller-1JbKMe .channel-2QD9_O:active .wrapper-3t9DeA:before {
+  background: linear-gradient(90deg, transparent, var(--background-modifier-active) 50%);
+}
+#app-mount .privateChannels-1nO12o .scroller-1JbKMe .channel-2QD9_O.selected-aXhQR6 .wrapper-3t9DeA:before {
+  background: linear-gradient(90deg, transparent, var(--accent-solid) 50%);
+}
+#app-mount .privateChannels-1nO12o .scroller-1JbKMe .channel-2QD9_O.selected-aXhQR6 .wrapper-3t9DeA:after {
+  background: #fff;
+}
 
 #app-mount .guilds-1SWlCJ .scroller-2TZvBN {
   background: var(--background-colour);
@@ -1149,6 +1167,18 @@
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-bold);
   color: var(--text-muted);
+}
+#app-mount .members-1998pB .member-3-YXUe:hover .wrapper-3t9DeA:before {
+  background: linear-gradient(90deg, transparent, var(--background-modifier-hover) 50%);
+}
+#app-mount .members-1998pB .member-3-YXUe:active .wrapper-3t9DeA:before {
+  background: linear-gradient(90deg, transparent, var(--background-modifier-active) 50%);
+}
+#app-mount .members-1998pB .member-3-YXUe.selected-aXhQR6 .wrapper-3t9DeA:before {
+  background: linear-gradient(90deg, transparent, var(--accent-solid) 50%);
+}
+#app-mount .members-1998pB .member-3-YXUe.selected-aXhQR6 .wrapper-3t9DeA:after {
+  background-color: #fff;
 }
 #app-mount .members-1998pB .member-3-YXUe.selected-aXhQR6 .activity-2Gy-9S,
 #app-mount .members-1998pB .member-3-YXUe.selected-aXhQR6 .roleColor-rz2vM0 {
@@ -1556,24 +1586,6 @@
 #app-mount .layer-3QrUeG[aria-label*=SETTINGS] .scroller-2FKFPG::-webkit-scrollbar {
   display: none;
 }
-#app-mount .layer-3QrUeG[aria-label*=SETTINGS] .toolsContainer-1edPuj {
-  padding-top: 0;
-  width: auto;
-  position: absolute;
-  right: 25px;
-  top: -48px;
-}
-#app-mount .layer-3QrUeG[aria-label*=SETTINGS] .container-1sFeqf .closeButton-1tv5uR {
-  border: none;
-  width: 36px;
-  height: 36px;
-  flex: none;
-  background: transparent;
-  border-radius: 0;
-}
-#app-mount .layer-3QrUeG[aria-label*=SETTINGS] .container-1sFeqf .keybind-KpFkfr {
-  display: none;
-}
 #app-mount .layer-3QrUeG[aria-label*=SETTINGS] .standardSidebarView-3F1I7i {
   border-radius: var(--border-radius);
   background: var(--background-colour);
@@ -1586,7 +1598,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding-top: calc(var(--spacing) + 1px);
   padding-top: 56px;
 }
 #app-mount .layer-3QrUeG[aria-label*=SETTINGS] .standardSidebarView-3F1I7i:before {
@@ -1635,9 +1646,27 @@
 #app-mount .layer-3QrUeG[aria-label*=SETTINGS] .contentRegion-3nDuYy .contentColumnDefault-1VQkGM {
   padding: var(--spacing-lg);
 }
+#app-mount .layer-3QrUeG[aria-label*=SETTINGS] .contentRegion-3nDuYy .toolsContainer-1edPuj {
+  padding-top: 0;
+  width: auto;
+  position: absolute;
+  right: 25px;
+  top: -48px;
+}
+#app-mount .layer-3QrUeG[aria-label*=SETTINGS] .contentRegion-3nDuYy .container-1sFeqf .closeButton-1tv5uR {
+  border: none;
+  width: 36px;
+  height: 36px;
+  flex: none;
+  background: transparent;
+  border-radius: 0;
+}
+#app-mount .layer-3QrUeG[aria-label*=SETTINGS] .contentRegion-3nDuYy .container-1sFeqf .keybind-KpFkfr {
+  display: none;
+}
 #app-mount .layer-3QrUeG[aria-label*=SETTINGS] .contentRegion-3nDuYy h2 {
   font-weight: var(--font-weight-semibold);
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
   color: var(--text-focus);
   margin-bottom: var(--spacing-lg);
 }
@@ -1646,6 +1675,10 @@
   font-size: var(--font-size);
 }
 #app-mount .layer-3QrUeG[aria-label*=SETTINGS] .contentRegion-3nDuYy h5:not(.isEnabled-24g9qA) {
+  color: var(--text-default);
+}
+#app-mount .layer-3QrUeG[aria-label*=SETTINGS] .contentRegion-3nDuYy .description-3_Ncsb {
+  font-size: var(--font-size);
   color: var(--text-default);
 }
 #app-mount .layer-3QrUeG[aria-label*=SETTINGS] .contentRegion-3nDuYy .lookFilled-1Gx00P.colorBrand-3pXr91 {
@@ -1728,7 +1761,7 @@
 }
 #app-mount .layer-3QrUeG[aria-label*=SETTINGS] .contentRegion-3nDuYy .userSettingsAccount-2eMFVR h2:after {
   content: "Discordapp.com";
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
 }
 #app-mount .layer-3QrUeG[aria-label*=SETTINGS] .contentRegion-3nDuYy .userSettingsAccount-2eMFVR .cardPrimary-1Hv-to {
   background: transparent;

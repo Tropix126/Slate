@@ -44,6 +44,26 @@
       .wrapper-3t9DeA {
         width: 26px !important;
         height: 26px !important;
+        &:before {
+          right: -190px;
+        }
+        &:after {
+          right: -190px;
+        }
+      }
+      &:hover .wrapper-3t9DeA:before {
+        background: linear-gradient(90deg, transparent, var(--background-modifier-hover) 50%);
+      }
+      &:active .wrapper-3t9DeA:before {
+        background: linear-gradient(90deg, transparent, var(--background-modifier-active) 50%);
+      }
+      &.selected-aXhQR6 .wrapper-3t9DeA {
+        &:before {
+          background: linear-gradient(90deg, transparent, var(--accent-solid) 50%);
+        }
+        &:after {
+          background: #fff;
+        }
       }
     }
   }

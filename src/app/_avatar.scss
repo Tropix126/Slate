@@ -87,14 +87,14 @@
   &[aria-label*="mobile"] {
     &:not([style*="width:80px;"]):before {
       content: "";
-      background: linear-gradient(90deg, transparent, var(--bg4) 50%);
+      background: linear-gradient(90deg, transparent, var(--background-colour) 50%);
       height: 30px;
       width: 50px;
       top: 50%;
       transform: translateY(-50%);
       display: block;
       position: absolute;
-      right: -180px;
+      right: -210px;
     }
     &:after {
       content: "";
@@ -108,8 +108,8 @@
       height: 16px;
       top: 50%;
       transform: translateY(-50%);
-      right: -171px;
-      background: var(--green);
+      right: -211px;
+      background: var(--discord-green);
       z-index: 1;
     }
   }
