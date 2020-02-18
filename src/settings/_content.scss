@@ -1,7 +1,7 @@
 #app-mount .layer-3QrUeG[aria-label*="SETTINGS"] .contentRegion-3nDuYy {
   border-left: 1px solid var(--border-colour);
   .contentColumnDefault-1VQkGM {
-    padding: var(--spacing-lg);
+    padding: var(--spacing-double);
   }
 
   // Close button
@@ -31,22 +31,116 @@
     font-weight: var(--font-weight-semibold);
     font-size: var(--font-size-xl);
     color: var(--text-focus);
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-double);
+    line-height: unset;
   }
   h5 {
     font-weight: var(--font-weight-semibold);
     font-size: var(--font-size);
+    line-height: unset;
     &:not(.isEnabled-24g9qA) {
       color: var(--text-default);
     }
+  }
+  .titleDefault-a8-ZSr {
+    line-height: unset;
   }
   .description-3_Ncsb {
     font-size: var(--font-size);
     color: var(--text-default);
   }
+  .flex-1xMQg5 > .flex-1xMQg5 {
+    flex-direction: row-reverse;
+    align-items: center;
+    .flexChild-faoVW3:first-child {
+      padding-left: var(--spacing);
+    }
+  }
+  .inputWrapper-31_8H8:not([class*="multiInput"]) > .input-cIJ7To {
+    border: 1px solid var(--border-colour);
+    border-radius: var(--border-radius);
+    background: var(--settings-input-background);
+    padding: 0 var(--spacing-half);
+    font-size: var(--font-size);
+    height: var(--settings-input-height);
+  }
+  .formNotice-2_hHWR {
+    background: transparent;
+    border: none;
+    border-top: 1px solid var(--border-colour);
+    border-radius: 0;
+    padding: var(--spacing-double) 0 0;
+    font-size: var(--font-size);
+  }
+  .h3-3PDeKG {
+    line-height: unset;
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-half);
+  }
+
+  // Radio buttons
+  .radioGroup-1GBvlr {
+    .item-26Dhrx {
+      padding: 0 !important;
+      background: transparent;
+      border: none;
+      background: transparent !important;
+      margin-bottom: var(--spacing-half);
+      label {
+        display: flex;
+        align-items: center;
+        padding: 0;
+      }
+      &[style*="background-color"] polyline {
+        stroke: #222;
+        stroke-width: 3px;
+      }
+    }
+    .label-cywgfr {
+      padding-left: var(--spacing);
+      line-height: normal !important;
+    }
+    .title-3BE6m5 {
+      flex: 1;
+      width: auto;
+      line-height: normal;
+      font-size: var(--font-size);
+      font-weight: var(--font-size);
+    }
+    .info-3LOr12 {
+      display: flex;
+      align-items: center;
+      .desc-2Dttbk {
+        flex: 3;
+        margin: 0;
+        font-size: var(--font-size);
+      }
+    }
+    .checkbox-1ix_J3 {
+      width: 13px !important;
+      height: 13px !important;
+      border-radius: 50%;
+      background: var(--checkbox-background);
+      border: 1px solid var(--checkbox-border) !important;
+      svg {
+        display: none;
+      }
+      &[style*="border-color"] {
+        &:before {
+          content: "";
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+          background: var(--checkbox-tick);
+          position: absolute;
+        }
+      }
+    }
+  }
 
   // Blurple buttons
-  .lookFilled-1Gx00P.colorBrand-3pXr91 {
+  .lookFilled-1Gx00P.colorBrand-3pXr91,
+  .lookOutlined-3sRXeN.colorBrand-3pXr91 {
     @include smallBtn;
   }
 
@@ -64,9 +158,40 @@
     }
   }
 
+  // Content dividers
+  .children-rWhLdy > .marginBottom40-2vIwTv {
+    margin-bottom: var(--spacing-double);
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   // Green buttons
   .lookFilled-1Gx00P.colorGreen-29iAKY {
-    @include smallBtn(var(--discord-green));
+    font-size: var(--font-size);
+    padding: 0 var(--spacing);
+    height: 25px;
+    min-height: 25px;
+    min-width: auto;
+    text-decoration: none;
+    font-weight: var(--font-weight-light);
+    border: 1px solid var(--accent-solid);
+    background-color: var(--accent-solid);
+    border-radius: var(--border-radius);
+    transition: none;
+    color: #fff;
+    &:hover {
+      background: rgba(var(--accent-colour), 0.8);
+      border-color: rgba(var(--accent-colour), 0.8);
+    }
+  }
+
+  // Options
+  .divider-3573oO {
+    background-color: var(--border-colour);
+  }
+  .title-31JmR4 {
+    font-size: var(--font-size-lg);
   }
 
   // My Account
@@ -75,7 +200,7 @@
       font-size: 0;
       display: flex;
       align-items: center;
-      margin-bottom: var(--spacing-lg);
+      margin-bottom: var(--spacing-double);
       &:after {
         content: "Discordapp.com";
         font-size: var(--font-size-xl);
@@ -98,7 +223,7 @@
         display: none;
       }
       .marginBottom20-32qID7 {
-        margin-bottom: var(--spacing-sm);
+        margin-bottom: var(--spacing-half);
       }
       .viewBody-2Qz-jg {
         pointer-events: none;
@@ -117,7 +242,56 @@
     @include smallBtn;
   }
   .userSettingsSecurity-3IYeMF {
-    margin-top: var(--spacing-lg);
+    margin-top: var(--spacing-double);
+  }
+  .userInfoEditing-1CEzdT {
+    background: transparent;
+    border-radius: 0;
+    border: none;
+    padding: 0;
+    margin-bottom: var(--spacing-double);
+    border-bottom: 1px solid var(--border-colour);
+    padding-bottom: var(--spacing-double);
+    .multiInput-1e2xJ7 {
+      border: 1px solid var(--border-colour);
+      border-radius: var(--border-radius);
+      background: var(--background-color);
+      .input-cIJ7To {
+        padding: 0;
+        font-size: var(--font-size);
+        height: var(--settings-input-height);
+        background: transparent;
+      }
+    }
+    .multiInputLast-1aQ3YA {
+      &:before {
+        content: none;
+      }
+      .input-cIJ7To {
+        padding-left: var(--font-size);
+      }
+    }
+    .inputPrefix-2VAOGg {
+      font-size: var(--font-size);
+      height: var(--settings-input-height);
+      padding-top: 0;
+      padding-left: 0;
+      display: flex;
+      align-items: center;
+    }
+    .avatarUploaderInner-3UNxY3 {
+      width: 64px;
+      height: 64px;
+      border-radius: var(--border-radius);
+      border: 1px solid var(--border-colour);
+    }
+    h5 {
+      font-size: var(--font-size-sm);
+      margin-bottom: 0;
+    }
+    .avatarUploaderIndicator-2G-aIZ {
+      display: none;
+    }
   }
 
 

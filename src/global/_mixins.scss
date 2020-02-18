@@ -15,7 +15,13 @@
   } @else {
     color: $colour;
   }
+  &:first-child {
+    margin-left: 0;
+  }
   &:hover {
     background: var(--settings-button-hover);
+    @if $colour == var(--text-default) {
+      color: var(--text-focus);
+    }
   }
 }

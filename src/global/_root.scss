@@ -4,9 +4,10 @@
   --accent-solid: rgba(var(--accent-colour), 1);
 
   // Spacing
-  --spacing-sm: calc(var(--spacing) / 2);
+  --spacing-third: calc(var(--spacing) / 3);
+  --spacing-half: calc(var(--spacing) / 2);
   --spacing: 10px;
-  --spacing-lg: calc(var(--spacing) * 2);
+  --spacing-double: calc(var(--spacing) * 2);
 
   // Fonts
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;

@@ -28,6 +28,13 @@
   // Settings
   --settings-button: var(--account-panel-background-colour);
   --settings-button-hover: #{lighten(#2f363d, 4%)};
+  --settings-input-background: var(--toolbar-background);
+  --settings-input-height: 25px;
+
+  // Checkbox
+  --checkbox-background: #fff;
+  --checkbox-border: #bbb;
+  --checkbox-tick: #444;
 
   // Userpopouts
   --userpopout-header: var(--toolbar-background);
