@@ -148,16 +148,14 @@
     }
   }
 }
-.avatarHint-1qgaV3 {
-  foreignObject {
-    mask: none;
-  }
-  .avatarHintInner-Dco91E {
-    border-radius: var(--border-radius);
-    padding-top: 0;
-    height: calc(100% - 2px);
-    width: calc(100% - 2px);
-    margin-top: 1px;
-    margin-left: 1px;
-  }
+.avatarHint-1qgaV3 foreignObject {
+  mask: none;
+}
+.avatarHintInner-Dco91E {
+  border-radius: var(--border-radius);
+  padding-top: 0;
+  height: calc(100% - 2px);
+  width: calc(100% - 2px);
+  margin-top: 1px;
+  margin-left: 1px;
 }
