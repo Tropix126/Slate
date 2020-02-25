@@ -82,13 +82,14 @@
     // Unread pill
     .unread-3zKkbm {
       border-radius: 0;
-      width: 2px;
+      width: 3px;
       height: 40%;
       top: 50%;
       transform: translateY(-50%);
       margin-top: 0;
-      background: var(--accent-solid);
+      background-color: var(--accent-solid) !important;
       transition: 0.2s ease;
+      z-index: 1;
     }
 
     // Unread channel
