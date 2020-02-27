@@ -22,7 +22,25 @@
     border-radius: 0;
     background: transparent;
     border: none;
+    padding: var(--spacing);
     border-bottom: 1px solid var(--border-colour);
+    .bda-header {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      padding: 0;
+      overflow: visible;
+    }
+    .ui-switch-wrapper {
+      margin: 0;
+      height: 16px;
+      width: 16px;
+    }
+    .ui-switch-checkbox {
+      display: none;
+    }
+
+
     &:last-child {
       border-bottom: none;
     }

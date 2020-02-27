@@ -2,6 +2,7 @@
   // Master variables
   --border-radius: 3px;
   --accent-solid: rgba(var(--accent-colour), 1);
+  --base-left: var(--container, 0);
 
   // Spacing
   --spacing-third: calc(var(--spacing) / 3);
@@ -25,6 +26,9 @@
 
   // Toolbar (headers)
   --toolbar-height: 50px;
+
+  //
+  --item-height: 34px;
 
   // Sidebars
   --sidebar-width: 260px;

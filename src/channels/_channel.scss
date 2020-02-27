@@ -6,7 +6,7 @@
       margin: 0;
       padding: 0 var(--spacing);
       border-radius: 0;
-      height: 34px;
+      height: var(--item-height);
       svg {
         color: var(--text-default);
         opacity: .75;
