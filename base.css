@@ -77,6 +77,10 @@
   font-family: var(--font-family-sans-serif);
 }
 
+html, span:not([class*=spinner-]):not([class*=spinnerItem]) {
+  backface-visibility: hidden;
+}
+
 #app-mount .titleBar-AC4pGV {
   height: calc(var(--titlebar-height) - 2px);
   border-bottom: 1px solid var(--border-colour);
@@ -1068,13 +1072,10 @@
   margin-top: var(--spacing);
   padding-top: var(--spacing);
 }
-#app-mount .messagesWrapper-3lZDfY .groupStart-23k01U + .cozyMessage-3V1Y8y:not(.groupStart-23k01U) .contents-2mQqc9 {
+#app-mount .messagesWrapper-3lZDfY .groupStart-23k01U + .cozyMessage-3V1Y8y:not(.groupStart-23k01U) .container-3FojY8 {
   min-height: auto;
 }
-#app-mount .messagesWrapper-3lZDfY .cozyMessage-3V1Y8y {
-  padding-left: var(--avatar-size);
-}
-#app-mount .messagesWrapper-3lZDfY .cozyMessage-3V1Y8y .contents-2mQqc9 {
+#app-mount .messagesWrapper-3lZDfY .cozyMessage-3V1Y8y .container-3FojY8 {
   margin-left: 0;
   padding-left: var(--avatar-size);
 }
@@ -1086,7 +1087,7 @@
 }
 #app-mount .messagesWrapper-3lZDfY .cozyMessage-3V1Y8y .header-23xsNx {
   margin-left: 0;
-  padding-left: 0;
+  padding-left: 35px;
 }
 #app-mount .messagesWrapper-3lZDfY .cozyMessage-3V1Y8y .container-1ov-mD,
 #app-mount .messagesWrapper-3lZDfY .cozyMessage-3V1Y8y .markupRtl-3M0hmN {
