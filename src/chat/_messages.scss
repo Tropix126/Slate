@@ -1,14 +1,16 @@
 #app-mount .messagesWrapper-3lZDfY {
   .message-2qnXI6 {
     margin: 0;
-    padding: 0;
+    padding-left: calc(var(--avatar-size) * 1.9);
+    padding-bottom: var(--spacing);
     background: transparent !important;
     .avatar-1BDn8e {
       border-radius: var(--border-radius);
       border: 1px solid var(--border-colour);
+      top: var(--spacing);
+      left: var(--spacing);
       width: var(--avatar-size) !important;
       height: var(--avatar-size) !important;
-      margin: 0 0 0 calc(var(--avatar-size) / -1 + 15px);
       &:hover {
         border-color: var(--accent-solid);
       }
@@ -21,6 +23,8 @@
     }
     .markup-2BOw-j {
       font-size: var(--font-size);
+      margin-left: 0;
+      padding-left: 0;
       .emoji {
         width: calc(var(--font-size) * 1.6);
         height: calc(var(--font-size) * 1.6);
@@ -51,37 +55,18 @@
         }
       }
     }
+    & + .message-2qnXI6:not(.groupStart-23k01U) {
+      margin-top: calc(var(--spacing) / -1);
+    }
   }
   .groupStart-23k01U {
     border-top: 1px solid var(--border-colour);
-    margin-top: var(--spacing);
     padding-top: var(--spacing);
-    + .cozyMessage-3V1Y8y:not(.groupStart-23k01U) .container-3FojY8 {
-      min-height: auto;
+    h2, .username-1A8OIy, .timestamp-3ZCmNB {
+      line-height: normal;
     }
   }
-  .cozyMessage-3V1Y8y {
-    .container-3FojY8 {
-      margin-left: 0;
-      padding-left: var(--avatar-size);
-    }
-    .timestamp-3ZCmNB.alt-1uNpEt {
-      margin-left: -40px;
-    }
-    // Spacing between the avatar and message
-    .container-2LR0t2 {
-      min-height: auto;
-    }
-    .header-23xsNx {
-      margin-left: 0;
-      padding-left: 35px;
-    }
-    // Embed/Image/File/Text
-    .container-1ov-mD,
-    .markupRtl-3M0hmN {
-      margin-left: 35px;
-    }
-  }
+
   .mentioned-xhSam7 {
     background: rgba(var(--accent-colour), 0.1) !important;
     &:before {

@@ -1016,15 +1016,17 @@ html, span:not([class*=spinner-]):not([class*=spinnerItem]) {
 
 #app-mount .messagesWrapper-3lZDfY .message-2qnXI6 {
   margin: 0;
-  padding: 0;
+  padding-left: calc(var(--avatar-size) * 1.9);
+  padding-bottom: var(--spacing);
   background: transparent !important;
 }
 #app-mount .messagesWrapper-3lZDfY .message-2qnXI6 .avatar-1BDn8e {
   border-radius: var(--border-radius);
   border: 1px solid var(--border-colour);
+  top: var(--spacing);
+  left: var(--spacing);
   width: var(--avatar-size) !important;
   height: var(--avatar-size) !important;
-  margin: 0 0 0 calc(var(--avatar-size) / -1 + 15px);
 }
 #app-mount .messagesWrapper-3lZDfY .message-2qnXI6 .avatar-1BDn8e:hover {
   border-color: var(--accent-solid);
@@ -1037,6 +1039,8 @@ html, span:not([class*=spinner-]):not([class*=spinnerItem]) {
 }
 #app-mount .messagesWrapper-3lZDfY .message-2qnXI6 .markup-2BOw-j {
   font-size: var(--font-size);
+  margin-left: 0;
+  padding-left: 0;
 }
 #app-mount .messagesWrapper-3lZDfY .message-2qnXI6 .markup-2BOw-j .emoji {
   width: calc(var(--font-size) * 1.6);
@@ -1067,31 +1071,15 @@ html, span:not([class*=spinner-]):not([class*=spinnerItem]) {
   background: var(--accent-solid);
   color: #fff;
 }
+#app-mount .messagesWrapper-3lZDfY .message-2qnXI6 + .message-2qnXI6:not(.groupStart-23k01U) {
+  margin-top: calc(var(--spacing) / -1);
+}
 #app-mount .messagesWrapper-3lZDfY .groupStart-23k01U {
   border-top: 1px solid var(--border-colour);
-  margin-top: var(--spacing);
   padding-top: var(--spacing);
 }
-#app-mount .messagesWrapper-3lZDfY .groupStart-23k01U + .cozyMessage-3V1Y8y:not(.groupStart-23k01U) .container-3FojY8 {
-  min-height: auto;
-}
-#app-mount .messagesWrapper-3lZDfY .cozyMessage-3V1Y8y .container-3FojY8 {
-  margin-left: 0;
-  padding-left: var(--avatar-size);
-}
-#app-mount .messagesWrapper-3lZDfY .cozyMessage-3V1Y8y .timestamp-3ZCmNB.alt-1uNpEt {
-  margin-left: -40px;
-}
-#app-mount .messagesWrapper-3lZDfY .cozyMessage-3V1Y8y .container-2LR0t2 {
-  min-height: auto;
-}
-#app-mount .messagesWrapper-3lZDfY .cozyMessage-3V1Y8y .header-23xsNx {
-  margin-left: 0;
-  padding-left: 35px;
-}
-#app-mount .messagesWrapper-3lZDfY .cozyMessage-3V1Y8y .container-1ov-mD,
-#app-mount .messagesWrapper-3lZDfY .cozyMessage-3V1Y8y .markupRtl-3M0hmN {
-  margin-left: 35px;
+#app-mount .messagesWrapper-3lZDfY .groupStart-23k01U h2, #app-mount .messagesWrapper-3lZDfY .groupStart-23k01U .username-1A8OIy, #app-mount .messagesWrapper-3lZDfY .groupStart-23k01U .timestamp-3ZCmNB {
+  line-height: normal;
 }
 #app-mount .messagesWrapper-3lZDfY .mentioned-xhSam7 {
   background: rgba(var(--accent-colour), 0.1) !important;
