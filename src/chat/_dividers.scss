@@ -1,9 +1,10 @@
 #app-mount .chatContent-a9vAAp .divider-JfaTT5 {
   height: auto;
-  margin: var(--spacing) 0 0;
+  margin: 0;
   padding: var(--spacing) 0;
   border-top: 1px solid var(--border-colour);
   background: var(--background-colour);
+  top: 0;
   .content-1o0f9g {
     background: transparent;
     color: var(--text-muted);
@@ -22,7 +23,7 @@
       }
     }
     & + .groupStart-23k01U {
-      margin-top: calc(var(--spacing) - 4px);
+      margin-top: calc(var(--spacing) - 12px);
     }
   }
 }

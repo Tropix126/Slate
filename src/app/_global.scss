@@ -13,7 +13,7 @@
 
   // Mentions/Channel jump
   .mention {
-    background: rgba(var(--accent-colour), 0.15);
+    background: rgba(var(--accent), 0.15);
     border-radius: var(--border-radius);
     color: var(--accent-solid);
     &:hover {

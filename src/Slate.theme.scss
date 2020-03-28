@@ -8,20 +8,25 @@
  * @website https://www.gibbu.me
 */
 
-@import url("https://gibbu.github.io/BetterDiscord-Themes/AdjustableServerWidth/base.css");
+@import url("https://gibbubdstuff.github.io/AdjustableServerWidth/base.css");
 
 :root {
 
-  --accent-colour: 3, 102, 214; /* This affects: Mentions, select channel/dm, unread channel */
+  --accent: 3, 102, 214; /* This affects: Mentions, select channel/dm, unread channel */
+  --accent-hover: 17, 83, 157; /* Hover state of --accent */
 
-  /* Guild variables  */
+  /* Adjustable Server Width variables  */
   --server-icon-size: 35px; /* Size of the server icons | DEFAULT: 35px */
   --server-icon-spacing: 8px; /* Spacing between server icons. Negative values are allowed | DEFAULT: 8px */
   --server-container-padding: 10px; /* Spacing to the left and right sides of server icons | DEFAULT: 10px */
 
 }
 
-@import 'global/import';
+@import 'root';
+@import 'dark';
+@import 'light';
+@import 'mixins';
+
 @import 'assets/import';
 @import 'app/import';
 @import 'channels/import';

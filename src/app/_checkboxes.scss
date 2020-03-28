@@ -1,24 +1,18 @@
-#app-mount .switch-3wwwcV {
-  width: 13px;
-  height: 13px;
-  border-radius: var(--border-radius);
-  background-color: var(--checkbox-background);
-  border: 1px solid var(--checkbox-border);
-  margin-left: 0;
+#app-mount .switch-3wwwcV,
+#app-mount .bd-switch {
+  height: 14px;
+  width: 30px;
+  border-radius: 3px;
+  &:after {
+    margin: 0;
+    border-radius: 3px;
+    width: 14px;
+    height: 14px;
+  }
   &.valueChecked-m-4IJZ {
-    background-color: var(--checkbox-background) !important;
-    &:before {
-      content: "";
-      width: 8px !important;
-      height: 3px !important;
-      background: transparent;
-      border-bottom: 2px solid var(--checkbox-tick);
-      border-left: 2px solid var(--checkbox-tick);
-      display: block;
-      opacity: 1;
-      top: 2px;
-      left: 1px;
-      transform: rotate(-45deg);
+    background: var(--accent-solid);
+    &:after {
+      transform: translate3d(16px,0,0);
     }
   }
 }

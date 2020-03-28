@@ -1,8 +1,11 @@
 :root {
   // Master variables
   --border-radius: 3px;
-  --accent-solid: rgba(var(--accent-colour), 1);
+  --accent-solid: rgba(var(--accent), 1);
+  --accent-solid-hover: rgba(var(--accent-hover), 1);
   --base-left: var(--container, 0);
+  --bd-blue: var(--accent-solid);
+  --bd-blue-hover: var(--accent-solid-hover);
 
   // Spacing
   --spacing-third: calc(var(--spacing) / 3);
@@ -48,4 +51,16 @@
   --discord-invisible: #747f8d;
   --discord-nitro: #ff73fa;
   --discord-blurple: #7289da;
+
+  // RadialStatus vars
+  --rs-small-spacing: 0px;
+  --rs-large-spacing: 0px;
+  --rs-width: 2px;
+  --rs-avatar-shape: 5%;
+  --rs-online-color: #43b581;
+  --rs-idle-color: #faa61a;
+  --rs-dnd-color: #f04747;
+  --rs-offline-color: #636b75;
+  --rs-streaming-color: #643da7;
+  --rs-invisible-color: #747f8d;
 }
