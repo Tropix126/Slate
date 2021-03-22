@@ -1,6 +1,6 @@
 # THIS REPO IS OUTDATED
 
-## New repo is found at [this repo](http://github.com/discordstyles/slate)
+## New repo can be found [here](http://github.com/discordstyles/slate)
 
 ### NOTE: Slate is in very early stages. Expect bugs and broken areas.
 
